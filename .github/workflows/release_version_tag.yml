@@ -26,5 +26,5 @@ jobs:
           PRERELEASE: 'true'
           TOKEN: ${{ secrets.AUTH_TOKEN }}
           TRIGGER: ${{ github.event.pull_request.base.ref }} # can use the triggering branch or define a fixed one like this: 'master'
-          REPO_OWNER: kipusystems
+          REPO_OWNER: the-nusbaum
           VERSION_FILE_NAME: 'VERSION'
