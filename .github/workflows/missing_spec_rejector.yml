@@ -6,7 +6,7 @@ on:
       - opened
       - reopened
       - ready_for_review
-    branches:
+    branches-ignore:
       - master
 
 jobs:
