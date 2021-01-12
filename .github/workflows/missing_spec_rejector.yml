@@ -3,7 +3,9 @@ name: Missing Spec Rejecter
 on:
   pull_request:
     types:
-      - opened, reopened, ready_for_review
+      - opened
+      - reopened
+      - ready_for_review
     branches:
       - master
 
