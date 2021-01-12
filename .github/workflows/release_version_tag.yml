@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Bump version and push tag
         if: github.event.pull_request.merged == true
-        uses: the-nusbaum/version_release_composer@master
+        uses: melheffe/version_release_composer@master
         env:
           PREPEND: 'v'
           APPEND: '.aws' # must include '.' or it will append without separation
