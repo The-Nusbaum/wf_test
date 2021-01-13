@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Check for Spec changes
-      uses: the-nusbaum/missing_spec_rejector@master
+      uses: the-nusbaum/missing_spec_rejector@main
       env:
         TOKEN: ${{ secrets.TOKEN }}
         TRIGGER: ${{ github.event.pull_request.base.ref }} # can use the triggering branch or define a fixed one like this: 'master'
